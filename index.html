@@ -641,11 +641,28 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <!-- MODAL FORM CLOSE BUTTON -->
+
         <button class="modal-close-button" data-modal-close>
           <svg class="icon-close-button">
             <use href="./images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
+
+        <!-- MODAL SUBMIT FORM -->
+
+        <form class="modal-form">
+          <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="modal-label"
+            >Имя
+            <div class="modal-field">
+              <input class="modal-input" type="text" name="name" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-modal-name"></use>
+              </svg>
+            </div>
+          </label>
+        </form>
       </div>
     </div>
 
