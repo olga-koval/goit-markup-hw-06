@@ -637,9 +637,8 @@
           </div>
 
           <!-- SIGN UP FOOTER -->
-          <div>
+          <div class="sign-up-section">
             <p class="sign-up-title">Подпишитесь на рассылку</p>
-
             <div></div>
           </div>
         </div>
@@ -660,16 +659,34 @@
 
         <!-- MODAL SUBMIT FORM -->
 
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
           <label class="modal-label"
             >Имя
-            <div class="modal-field">
+            <span class="modal-field">
               <input class="modal-input" type="text" name="name" />
               <svg class="modal-icon">
                 <use href="./images/icons.svg#icon-modal-name"></use>
               </svg>
-            </div>
+            </span>
+          </label>
+          <label class="modal-label"
+            >Телефон
+            <span class="modal-field">
+              <input class="modal-input" type="tel" name="phone-number" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label"
+            >Почта
+            <span class="modal-field">
+              <input class="modal-input" type="email" name="email" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </span>
           </label>
         </form>
       </div>
