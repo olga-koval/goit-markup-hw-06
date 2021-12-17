@@ -915,6 +915,8 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  padding: 40px;
 }
 
 .modal-close-button {
@@ -954,7 +956,6 @@ body {
 
 .modal-form {
   width: 448px;
-  margin: 40px;
 }
 
 .modal-header {
@@ -998,11 +999,13 @@ body {
   padding-left: 30px;
 }
 
-.modal-input:focus-within,
-.modal-icon:focus-within {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-  border: solid var(--accent-color);
+.modal-input:focus-within {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-input:hover {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .modal-icon {
@@ -1014,6 +1017,14 @@ body {
   height: 18px;
   fill: var(--title-text-color);
   transform: translateY(-50%);
+}
+
+.modal-label:focus-within .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-label:hover .modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-field-comment {
@@ -1028,6 +1039,18 @@ body {
   margin-top: 4px;
   margin-bottom: 20px;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-field-comment:focus-within {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-field-comment:hover,
+.modal-field-comment:focus,
+.modal-field-comment:active {
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
 }
 
 .modal-checkbox {
@@ -1041,11 +1064,14 @@ body {
   display: block;
   width: 16px;
   height: 15px;
-  /* background-color: orange; */
   background-image: url(../images/icon-checked.svg);
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 7px;
+}
+
+.checkbox:focus + .checkbox-icon {
+  border-color: var(--accent-color);
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -1055,13 +1081,15 @@ body {
 }
 
 .terms {
-  text-decoration-line: underline;
   color: var(--accent-color);
   cursor: pointer;
   margin-left: 4px;
+  transition: font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms:hover {
+.terms:hover,
+.terms:focus,
+.terms:active {
   font-weight: 700;
 }
 
@@ -1079,27 +1107,18 @@ body {
   color: var(--secondary-text-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 
   padding: 10px 56px;
   margin-right: 124px;
   margin-left: 124px;
+
+  /* transition: box-shadow 5250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-button:hover,
 .modal-button:focus,
 .modal-button:active {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.modal-field:focus-within {
-  color: var(--accent-color);
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
-.modal-field:hover {
-  color: var(--accent-color);
-  cursor: pointer;
+  box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
