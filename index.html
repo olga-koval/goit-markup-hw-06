@@ -678,7 +678,7 @@
           <label class="modal-label"
             >Имя
             <span class="modal-field">
-              <input class="modal-input" type="text" name="name" />
+              <input class="modal-input" type="text" name="name" required />
               <svg class="modal-icon">
                 <use href="./images/icons.svg#icon-modal-name"></use>
               </svg>
@@ -687,7 +687,12 @@
           <label class="modal-label"
             >Телефон
             <span class="modal-field">
-              <input class="modal-input" type="tel" name="phone-number" />
+              <input
+                class="modal-input"
+                type="tel"
+                name="phone-number"
+                required
+              />
               <svg class="modal-icon">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
@@ -716,6 +721,7 @@
               type="checkbox"
               name="terms"
               value="terms"
+              required
             />
             <span class="checkbox-icon"></span>
             Соглашаюсь с рассылкой и принимаю
