@@ -942,9 +942,9 @@ body {
 .modal-close-button:hover,
 .modal-close-button:focus,
 .modal-close-button:active {
-  fill: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  border: var(--accent-color);
+  fill: var(--accent-color);
+  background-color: var(--secondary-text-color);
+  border: border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .icon-close-button {
