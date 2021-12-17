@@ -977,27 +977,36 @@ body {
 
 .modal-checkbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 425px;
-  height: 24px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  margin-left: 11px;
-  margin-right: 11px;
   margin-bottom: 30px;
 }
 
-.terms-agreement {
+.checkbox-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+  /* background-color: orange; */
+  background-image: url(../images/icon-checked.svg);
+  border: 1px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.terms {
   text-decoration-line: underline;
   color: var(--accent-color);
   cursor: pointer;
+  margin-left: 4px;
 }
 
-.terms-agreement:hover {
+.terms:hover {
   font-weight: 700;
 }
 
